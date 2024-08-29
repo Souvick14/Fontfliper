@@ -1,0 +1,279 @@
+.backblur{
+    z-index: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(1.5px);
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: center;
+    align-items: center;
+}
+@font-face {
+    font-family: myfont1;
+    src: url(/src/images/JosefinSans-Bold.ttf);
+}
+#entertext,#gettext{
+    transition: all 0.5s;
+    font-family: myfont1;
+    color: rgb(8, 44, 0);
+    font-size-adjust: inherit;
+}
+#entertext{
+    transition: all 0.5s;
+    margin-left: 20px;
+}
+#gettext{
+    transition: all 0.5s;
+    margin-left: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgarrow{
+    width: 70px;
+    height: 70px;
+    background-image: url(/src/images/icons8-easy-to-find-70.png);
+}
+#upperenteredtext{
+    max-width: 440px;
+    max-height: 368px;
+    color: wheat;
+    background-attachment: scroll;
+    overflow:scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 1rem;
+    margin-top: 10px;
+    /* max-width: 357.517px;
+    max-height: 304px; */
+    margin-bottom: 10px;
+    border: 1px wheat solid;
+    outline: none;
+    margin-left: 20px;
+    font-size: large;
+}
+#userenteredtext::placeholder,#upperenteredtext::placeholder{
+    color: wheat;
+}
+
+#userenteredtext::-webkit-scrollbar,#upperenteredtext::-webkit-scrollbar{
+    display: none;
+}
+
+#userenteredtext{
+    background-attachment: scroll;
+    font-size: large;
+    overflow:scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+    color: wheat;
+    
+    outline: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 1rem;
+    margin-top: 10px;
+    border: 1px wheat  solid;
+    margin-bottom: 10px;
+    
+}
+@media screen and (max-width: 950px){
+    .backblur{
+        flex-direction: column;
+    }
+    #entertext{
+        margin-top: 30px;
+}
+    
+    #userenteredtext{
+        
+        height: 10em;
+        margin-right: 10px;
+        margin-left: 10px;
+        max-width: 300px;
+     
+    }
+    #upperenteredtext{
+        
+        height: 10em;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 100px;
+        max-width: 300px;
+    }
+    .imgarrow{
+        width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+        transform: rotate(90deg);
+    }
+}
+#copy{
+    margin-right: 20px;
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+    outline: none;
+    border: 1px solid transparent;
+    background-image: url(/src/images/copyblack.png);
+    /* background-image: url(); */
+}
+
+@font-face{
+    font-family: BebasNeue;
+    src: url(/src/fonts/BebasNeue-Regular.ttf);
+}
+@font-face{
+    font-family: BlackOpsOne;
+    src: url(/src/fonts/BlackOpsOne-Regular.ttf);
+}
+@font-face{
+    font-family: Caveat;
+    src: url(/src/fonts/Caveat-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: DancingScript;
+    src: url(/src/fonts/DancingScript-Medium.ttf);
+}
+@font-face{
+    font-family: GamjaFlower;
+    src: url(/src/fonts/GamjaFlower-Regular.ttf);
+}
+@font-face{
+    font-family: honk;
+    src: url(/src/fonts/Honk-Regular-VariableFont_MORF\,SHLN.ttf);
+}
+@font-face{
+    font-family: Lobster;
+    src: url(/src/fonts/Lobster-Regular.ttf);
+}
+@font-face{
+    font-family: NotoSansJP;
+    src: url(/src/fonts/NotoSansJP-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family:Pacifico ;
+    src: url(/src/fonts/Pacifico-Regular.ttf);
+}
+@font-face{
+    font-family: ProtestGuerrilla;
+    src: url(/src/fonts/ProtestGuerrilla-Regular.ttf);
+}
+
+@font-face{
+    font-family: ProtestRevolution;
+    src: url(/src/fonts/ProtestRevolution-Regular.ttf);
+}
+@font-face{
+    font-family: ProtestRiot;
+    src: url(/src/fonts/ProtestRiot-Regular.ttf);
+}
+@font-face{
+    font-family: ProtestStrike;
+    src: url(/src/fonts/ProtestStrike-Regular.ttf);
+}
+@font-face{
+    font-family: RubikGlitchPop;
+    src: url(/src/fonts/RubikGlitchPop-Regular.ttf);
+}
+@font-face{
+    font-family: SingleDay;
+    src: url(/src/fonts/SingleDay-Regular.ttf);
+}
+@font-face{
+    font-family: Sixtyfour;
+    src: url(/src/fonts/Sixtyfour-Regular-VariableFont_BLED\,SCAN.ttf);
+}
+#underline,#bold,#italic{
+    width: 25px;
+    height: 25px;
+    border: 1px solid transparent;
+    outline: none;
+    text-align: center;
+    border-radius: 50%;
+    background: #255535;
+    box-shadow: inset 5px 5px 10px #122a1a,
+                inset -5px -5px 10px #388050;
+}
+#underline{
+text-decoration-line: underline;
+}
+
+#BebasNeues{
+ font-family: BebasNeue;
+}
+#BlackOpsOnes{
+    font-family:BlackOpsOne;
+}
+#Caveats{
+    font-family: Caveat;
+    
+}
+#DancingScripts{
+    font-family: DancingScript;
+    
+}
+#GamjaFlowers{
+    font-family: GamjaFlower;
+    
+}
+#honks{
+    font-family: honk;
+    
+}
+#Lobsters{
+    font-family:  Lobster;
+    
+}
+#NotoSansJPs{
+    font-family:  NotoSansJP;
+    
+}
+#Pacificos{
+    font-family: Pacifico ;
+    
+}
+#ProtestGuerrillas{
+    font-family: ProtestGuerrilla;
+    
+}
+#ProtestRevolutions{
+    
+    font-family: ProtestRevolution;
+}
+#ProtestRiots{
+    font-family: ProtestRiot;
+    
+}
+#ProtestStrikes{
+    font-family: ProtestStrike;
+    
+}
+#RubikGlitchPops{
+    font-family: RubikGlitchPop;
+    
+}
+#SingleDays{
+    font-family: SingleDay;
+    
+}
+#Sixtyfours{
+    font-family: Sixtyfour;
+
+}
+#fontlist{
+    padding: 3px;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #64936d, #547b5c);
+    box-shadow:  20px 20px 60px #4f7457,
+             -20px -20px 60px #6b9e75;
+    outline: none;
+}

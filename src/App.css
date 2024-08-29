@@ -1,0 +1,303 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/src/images/background1.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-blend-mode: darken;
+}
+.blur{
+  
+  position: absolute;
+  width: 100px;
+  height: 100rem;
+  filter: blur(30px);
+  background-color: #d20000;
+}
+/* body::after {
+  content: "";
+  background: url(/imag/background1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: blur(10px);
+}
+ */
+
+.navbar{
+  position: relative;
+  flex-wrap: nowrap;
+  color: #A3B18A;
+  min-width: 100vw;
+  max-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 6rem;
+  background-color: #344E41;
+  box-sizing: content-box;
+  z-index: 2;
+}
+.right{
+  margin-right: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.rightright{
+  background-image: url(/src/images/logoweb.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#logo1{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.rightleftdown{
+  font-family: 'Dancing Script', cursive;
+  font-size: 7px;
+}
+.left{
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows:auto auto auto
+}
+.box{
+  width: 2.5rem;
+  height: 0.4rem;
+  list-style-type: none;
+  margin-top: 2.7px;
+  margin-bottom: 2.7px;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border: 2px solid black;
+  background-color: #A3B18A;
+}
+.flotingnavbar{
+  overflow: hidden;
+  z-index: 1;
+  display: none;
+  justify-content: space-between;
+  align-items:flex-start;
+  float: right;
+  position: absolute;
+  right: 0;
+  width:30%;
+  height:89%;
+  background-color: #588157;
+  border-bottom-left-radius: 50%;
+}
+.flotingnavarul{
+  width:100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content:space-around;
+  align-items: center;
+}
+.libutton{
+
+  padding: 1rem;
+  font-size: larger;
+  font-weight: bolder;
+  list-style-type: none;
+}
+.libutton:hover,
+.libutton:focus { /* For keyboard accessibility */
+opacity: 1; /* Remains fully opaque on hover */
+border: #344E41 2px solid;
+border-radius: 2rem;
+background-color: rgba(139, 182, 138,0.5);
+}
+
+.libutton:not(:hover):not(:focus) { /* Opacity reduction when not hovered or focused */
+opacity: 0.5; /* Adjust this value for desired level of transparency */
+}
+
+.developerborder{
+  position: relative;
+  top: 0;
+  left: -24rem;
+  transition: all 0.5s linear;
+  overflow: hidden;
+  width: 120%;
+  margin-top: 30%;
+  /* margin-right: 100%; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 5.2rem;
+  background: rgba(121,199,255);
+  background: linear-gradient(81deg, rgba(121,199,255,0) 0%, rgba(44, 68, 48, 0.661) 50%, rgb(35, 55, 39) 60%);
+  border-top-left-radius: 2.8rem;
+  border-top-right-radius: 2.8rem;
+  border-bottom-left-radius: 2.8rem;
+  border-bottom-right-radius: 2.8rem;
+  /* transform: translateX(-520px); */
+  /* transition: transform 1s ease; */
+}
+.developerborder:hover{
+  left :-9rem;
+  transition : left 2s ease-in-out;
+}
+#forchange{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 87.1%;
+}
+.developer{
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+
+  align-items: center;
+
+  width: 110%;
+  height: 5rem;
+  background: rgb(121,199,255);
+  background: linear-gradient(81deg, rgba(121,199,255,0) 0%, rgba(58,90,64,0.6607375713957458) 50%, rgba(58,90,64,1) 60%);
+  border-top-left-radius: 2.8rem;
+  border-top-right-radius: 2.8rem;
+  border-bottom-left-radius: 2.8rem;
+  border-bottom-right-radius: 2.8rem;
+  /* border: 2px solid black;  */
+}
+.developerimage{
+  background-image: url(/src/images/devimage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0.4rem;
+  width: 4rem;
+  overflow: hidden;
+  height: 4rem;
+  border-top-left-radius: 2.8rem;
+  border-top-right-radius: 2.8rem;
+  border-bottom-left-radius: 2.8rem;
+  border-bottom-right-radius: 2.8rem;
+  border: 5x solid wheat;
+  padding: 2px;
+}
+#devimg1{
+  border-top-left-radius: 2.8rem;
+  border-top-right-radius: 2.8rem;
+  border-bottom-left-radius: 2.8rem;
+  border-bottom-right-radius: 2.8rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.developerleft{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+@keyframes dev {
+  0%{
+      display: none;
+      opacity: 0.1;
+      transform: translateX(-520px);
+  }
+  40%{
+      display: flex;
+      opacity: 0.6;
+      transform: translateX(-320px);
+
+  }
+  100%{
+      display: flex;
+      opacity: 1;
+      transform: translateX(-150px);
+  }
+}
+@media screen and (max-width: 550px){
+  .developerborder{
+    left: -14rem;
+  }
+  .developerleftup,.developerleftdown{
+    display: none;
+  }
+  body{
+      background-image: url(/src/images/background2.jpg);
+  }
+  .left{
+      width: auto;
+      height: auto;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows:auto auto auto
+  }
+  .box{
+      width: 2.1rem;
+      height: 0.2rem;
+      list-style-type: none;
+      margin-top: 2.7px;
+      margin-bottom: 2.7px;
+      margin-left: 2.5px;
+      margin-right: 2.5px;
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+      border-bottom-left-radius: 2rem;
+      border: 2px solid black;
+      background-color: #A3B18A;
+  }
+  .flotingnavbar{
+  
+      display: none;
+      justify-content: center;
+      align-items:flex-start;
+      float: right;
+      width: 50%;
+      height: calc(100vh - (6rem + 0px));
+      background-color: #588157;
+      border-bottom-left-radius: 50%;
+  }
+  .flotingnavarul{
+      width: 100%;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content:space-around;
+      align-items: center;
+  }
+  .libutton{
+      padding: 0.7rem;
+      font-size: 1rem;
+      font-weight: bolder;
+      list-style-type: none;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');

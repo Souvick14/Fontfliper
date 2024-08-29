@@ -1,0 +1,93 @@
+@keyframes sidenavanimations{
+    0%{
+        width: 0%;
+        border-bottom-left-radius: 0%;
+    }
+  
+    20%{
+        width:6%;
+        border-bottom-left-radius: 10%;
+  
+    }
+  
+    40%{
+      width:12%;
+      border-bottom-left-radius: 20%;
+  
+    }
+  
+    60%{
+        width:18%;
+        border-bottom-left-radius: 30%;
+    }
+  
+    80%{
+        width: 24%;
+        border-bottom-left-radius: 40%;
+  
+    }
+  
+    100%{
+        width: 30%;
+        border-bottom-left-radius: 50%;
+    
+    }
+  }
+@keyframes sidenavanimations{
+    0%{
+        width: 0%;
+        border-bottom-left-radius: 0%;
+    }
+  
+    20%{
+        width:6%;
+        border-bottom-left-radius: 10%;
+  
+    }
+  
+    40%{
+      width:12%;
+      border-bottom-left-radius: 20%;
+  
+    }
+  
+    60%{
+        width:18%;
+        border-bottom-left-radius: 30%;
+    }
+  
+    80%{
+        width: 24%;
+        border-bottom-left-radius: 40%;
+  
+    }
+  
+    100%{
+        width: 30%;
+        border-bottom-left-radius: 50%;
+    
+    }
+  }
+@keyframes copyani {
+    0%{
+        background-color: #9400D3;
+    }
+    16%{
+        background-color: #4B0082;
+    }
+    32%{
+        background-color: #0000FF;
+    }
+    48%{
+        background-color: #9400D3;
+    }
+    64%{
+        background-color: #9400D3;
+    }
+    80%{
+        background-color: #9400D3;
+    }
+    100%{
+        background-color: #9400D3;
+    }
+}
